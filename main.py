@@ -2,12 +2,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-r = 1.0
-v = 2.0
+fps = 60
+t_max = 10
+
+r = np.float64(input('Enter radius  : '))
+v = np.float64(input('Enter velocity: '))
+
 omega = v / r
 
-t_max = 10
-fps = 60
 t = np.linspace(0, t_max, t_max * fps)
 
 x = v * t - r * np.sin(omega * t)
