@@ -28,6 +28,8 @@ ax.spines['top'].set_visible(False)
 
 ax.set_aspect('equal', 'box')
 
+plt.subplots_adjust(right=0.925, top=0.925)
+
 line, = ax.plot([], [], 'b-', lw=2)
 point, = ax.plot([], [], 'r.')
 
