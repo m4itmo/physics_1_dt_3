@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-r = 1.0
-v = 2.0
+r = np.float64(input('Enter radius  : '))
+v = np.float64(input('Enter velocity: '))
 
 t = np.linspace(0, 2 * np.pi, 1000)
 
